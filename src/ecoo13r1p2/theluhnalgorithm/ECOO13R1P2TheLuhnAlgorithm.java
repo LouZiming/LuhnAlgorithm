@@ -19,7 +19,7 @@ public class ECOO13R1P2TheLuhnAlgorithm {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         for(int i5=0;i5<5;i5++){
-            int ans = 0;
+            String ans = "";
             for(int j5=0;j5<5;j5++){
                 String num = in.next();
                 int sum = 0;
@@ -37,12 +37,13 @@ public class ECOO13R1P2TheLuhnAlgorithm {
                 }
                 if(sum%10!=0){
                     ans += 10-sum%10;
-                    ans = ans * 10;
+                    //ans = ans * 10;
                 }
                 else
-                    ans = ans * 10;
+                    //ans = ans * 10;
+                    ans+="0";
             }
-            ans = ans/10;
+            //ans = ans/10;
             System.out.println(ans);
         }
     }
